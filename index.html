@@ -42,8 +42,8 @@
 								<li><a class="scroll" data-hover="About" href="#about">About</a></li>
 								<li><a class="scroll" data-hover="Services" href="#services" >Services</a></li>
 								<li><a class="scroll" data-hover="Experience" href="#work">Experience</a></li>
-								<li><a class="scroll" data-hover="Portfolio" href="#port">Portfolio</a></li>
-								<li><a class="scroll" data-hover="Blog" href="#blogs">Blog</a></li>
+								<li><a class="scroll" data-hover="Portfolio" href="#port">Awards</a></li>
+								<li><a class="scroll" data-hover="Blog" href="#blogs">Projects</a></li>
 								<li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -118,13 +118,16 @@
 												Now I am Full stack JavaScript and PHP developer.
 												</p>
 											<ul>
-												<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
-												<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+												<li><a class="a-btn-a scroll hover_me" href="#port">My Work</a></li>
+												<li><a class="a-btn-h scroll hover_me" href="#contact">Hire Me</a></li>
 											</ul>
+											<br/>
+											
 										</div>
 					                </div>
 					</div>
 				</div>
+				
 				<div class="col-md-6 about-right">
 					
 				</div>
@@ -199,20 +202,33 @@
 	<div id="work" class="work">
 		<div class="container">
 			<div class="service-head text-center">
-						<h4>WHAT I DID</h4>
+						<h4>EXPERIENCE</h4>
 						<h3>MY <span>EXPERIENCE</span></h3>
 						<span class="border one"></span>
 					</div>
 					<div class="time-main w3l-agile">
 							<div class="col-md-6 year-info">
 							   <ul class="year">
-								   <li class="hover_me timeline-badge success">2017-2018</li>
 								   <li class="hover_me timeline-badge pass">2018-To date</li>
-								  
+								   <li class="hover_me timeline-badge success">2017-2018</li>
 								   <div class="clearfix"></div>
 								</ul>
 							</div> 
 					                        <ul class="col-md-6 timeline">
+												<li>
+													<div class="timeline-badge primary hover_me">
+													  <i class="fas fa-briefcase"></i>
+														
+												  </div>
+													<div class="timeline-panel">
+													  <div class="timeline-heading">
+														<h4 class="timeline-title">Netbritz</h4>
+													  </div>
+													  <div class="timeline-body">
+														<p>I am founder and CEO of netbritz.com which is the new modern social media with almost all features of modern social App. It was engeneered with full JavaScript stack which is Reactjs, Redux, Apollo-client, Apollo-server, Expressjs, and MongoDb.   </p>
+													  </div>
+													</div>
+												  </li>
 																<li>
 																  <div class="timeline-badge info hover_me">
 																	<i class="fas fa-briefcase"></i>
@@ -224,21 +240,6 @@
 																	</div>
 																	<div class="timeline-body">
 																	  <p>I was Fullstack developer and team leader resposible for designing, developing and maintaining new user interfaces for both mobile and desktop, developing and maintaining API's, designing and developing databases among others. </p>
-																	</div>
-																  </div>
-																</li>
-																
-																<li>
-																  <div class="timeline-badge primary hover_me">
-																	<i class="fas fa-briefcase"></i>
-																	  
-																</div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Netbritz</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>I am founder and CEO of netbritz.com which is the new modern social media with almost all features of modern social App. It was engeneered with full JavaScript stack which is Reactjs, Redux, Apollo-client, Apollo-server, Expressjs, and MongoDb.   </p>
 																	</div>
 																  </div>
 																</li>
@@ -261,7 +262,7 @@
 				<div class="sap_tabs">
 					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 						<ul class="resp-tabs-list">
-							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>ALL</span></li> 
+							<li class="resp-tab-item hover_me" aria-controls="tab_item-0" role="tab"><span>ALL</span></li> 
 						</ul>				  	 
 						<div class="resp-tabs-container">
 							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
@@ -387,8 +388,11 @@
 					<input type="text" name="name" placeholder="Name" id="name" value=""  required>
 					<input type="email" name="email" value="" placeholder="Email" id="email"  required>
 					<textarea name="message" id="message"  placeholder="Message" required></textarea>
+					<div class="clearfix"> </div>
 					<div data-netlify-recaptcha="true"></div><br/><br/>
+					<div class="clearfix"> </div>
 					<input type="submit" class="hover_me" value="Send">
+					<div class="clearfix"> </div>
 				</form>
 			</div>
 			<div class="clearfix"></div>
