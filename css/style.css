@@ -23,6 +23,8 @@ body a {
 }
 .floatLeft{
 	float: left!important;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
 }
 .hover_me {
 	transition: all 0.5s linear;
