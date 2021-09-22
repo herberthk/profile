@@ -24,21 +24,21 @@ jobs:
           node-version: 12.x
       # Run npm install and build on our code
       # - name: Install dependencies and build on our code
-      # - run: yarn && yarn build
+      - run: yarn && yarn build
       # - run: npm run build --if-presen
       # Deploy to Netlify using our production secrets
       - name: Deploy to netlify
         uses: netlify/actions/build@master
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_BUILD_KEY }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          # NETLIFY_BASE: site
-          NETLIFY_CMD: yarn && yarn build
-          NETLIFY_DIR: dist
-          # NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          # NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_BUILD_KEY }}
           # NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        # with:
-          # args: deploy --dir=dist && netlify deploy --dir=dist --prod
+          # NETLIFY_BASE: site
+          # NETLIFY_CMD: yarn && yarn build
+          # NETLIFY_DIR: dist
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=dist && netlify deploy --dir=dist --prod
           # args: deploy --prod
-          # secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+          secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
         
