@@ -30,10 +30,15 @@ jobs:
       - name: Deploy to netlify
         uses: netlify/actions/build@master
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          args: deploy --dir=dist && netlify deploy --dir=dist --prod
+          # NETLIFY_BASE: site
+          NETLIFY_CMD: yarn && yarn build
+          NETLIFY_DIR: dist
+          # NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          # NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        # with:
+          # args: deploy --dir=dist && netlify deploy --dir=dist --prod
           # args: deploy --prod
-          secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+          # secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
         
