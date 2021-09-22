@@ -35,5 +35,5 @@ jobs:
         with:
           args: deploy --dir=dist && netlify deploy --dir=dist --prod
           # args: deploy --prod
-          # secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+          secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
         
