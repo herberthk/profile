@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/herberthk/profile#readme",
   "devDependencies": {
-    "vite": "^2.5.10"
+    "vite": "^2.5.10",
+    "vite-plugin-minify": "^1.5.2"
   }
 }
