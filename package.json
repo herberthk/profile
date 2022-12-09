@@ -1,7 +1,7 @@
 {
   "name": "profile",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kavuma Herbert is the full stack  software Engineer with financial accounting background. He specialized in building, developing efficient and modern responsive single page applications, designing, developing and maintaining secure APIs, Database and mobile applications",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
